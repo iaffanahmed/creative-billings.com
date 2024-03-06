@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Creative-Billings</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="" name="keywords">
+  <meta content="" name="description">
+  
+	<meta property="og:title" content="We are one of the best Medical Billing Team in the USA, empowering medical practices to achieve better financial outcomes."> 
+	<meta property="og:description" content="Best medical billing company offering customized Top medical billing services to clinicians in USA for optimum growth and revenue."> 
+	<meta property="og:image" content="https://i.ibb.co/M8gGVqh/Screenshot-2024-02-18-135146.png"> 
+	<meta property="og:url" content="https://creative-billings.com">
+	
+	<meta name="description" content="Best medical billing company offering customized Top medical billing services to clinicians in USA for optimum growth and revenue.">
+
+  <!-- Favicons -->
+  <link href="img/favicon.png" rel="icon">
+  <link href="apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Montserrat:300,400,500,700" rel="stylesheet">
+	
+  <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,700' rel='stylesheet' type='text/css'>
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+  
+  <!-- Bootstrap CSS File -->
+    <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Libraries CSS Files -->
+  <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="lib/animate/animate.min.css" rel="stylesheet">
+  <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+  <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+  <!-- Main Stylesheet File -->
+	<link href="css/style.css" rel="stylesheet">
+  
+  	<link rel="stylesheet" href="Form/css/style.css">
+  
+	<!-- <link href="css/contactstyle.css" rel="stylesheet"> -->
+  
+
+ <style>
+   .section-header h2{
+   text-align: center;
+    font-size: 38px;
+    font-weight: 600;
+    color: #004289;
+     padding-top: 50px;}
+  </style>
+
+</head>
+
+<body>
+
+  <!--============================================================Header START============================================================-->
+  <header id="header" class="fixed-top">
+    <div class="container">
+
+      <div class="logo float-left">
+        <!-- Uncomment below if you prefer to use an image logo -->
+        <h1 class="text-light"><a href="index.html"><span>Creative-Billings</span></a></h1>
+        <!-- <a href="#intro" class="scrollto"><img src="img/3.png" alt="" class="img-fluid"></a> -->
+      </div>
+
+      <nav class="main-nav float-right d-none d-lg-block">
+        <ul>
+          <li class="active"><a href="index.html">Home</a></li>
+          <li><a href="index.html">About Us</a></li>
+          <li><a href="index.html">Services</a></li>
+          <!-- <li><a href="#portfolio">Portfolio</a></li> -->
+          <li><a href="index.html">Team</a></li>
+          <li><a href="index.html">Contact Us</a></li>
+        </ul>
+      </nav><!-- .main-nav -->
+      
+    </div>
+  </header><!-- #header -->
+<!--============================================================Header  END============================================================-->
+  
+  
+
+  <main id="main"  style="background: url(img/contactbg.jpg) center fixed no-repeat;">
+
+ 
+    <!--============================================================Contact START============================================================-->
+    <section id="contact">
+		<div class="container-fluid">
+
+				<div class="section-header">
+					<h2>Request Call / Appointment</h2>
+					<p>Let us get back to you with more details!</p>
+				</div>
+
+			<div class="row wow fadeInUp">
+
+			<div class="col-lg-6">
+            
+
+				<div class="form" id="contact-form">
+							
+							
+					<form action="" method="post" role="form" class="contactForm" id=contactForm>
+						<div class="form-row">
+							<div class="form-group col-lg-6">
+								<label for="name"> Name *</label>
+									<input type="text" name="name" class="form-control" id="name" placeholder="Katherine Ford"  />
+									
+							</div>
+							
+							<div class="form-group col-lg-6">
+								<label for="email"> Email *</label>
+									<input type="email" class="form-control" name="email" id="email" placeholder="katherine@emaple.com" data-rule="email"  />
+									
+							</div>
+						</div>
+						
+						<div class="form-group">
+							<label for="phone"> Contact *</label>
+								  <input type="tel" class="form-control" name="phone" id="phone" placeholder="+900000000" data-rule="minlen:4"  />
+								  
+						</div>
+						
+						<div class="form-group">
+							<label for="practice"> Practice</label>
+								<input type="text" class="form-control" name="practice" id="practice" placeholder="Best Clinic / Speech Pathology"  data-msg="Invalid" />
+								
+						</div>
+						
+						<div class="form-group">
+							<label for="state"> State</label>
+								<input type="text" class="form-control" name="state" id="state" placeholder="State e.g Arkansas"  data-msg="Invalid" />
+								
+						</div>
+						
+						<div class="form-group">
+							<label for="message"> Message</label>
+								<textarea class="form-control" name="message" id="message" rows="5"  placeholder="Message"></textarea>
+								
+                          
+                          
+						</div>
+						
+							<div class="text-center"><button type="submit" title="Send Message">Send Message</button></div>
+					</form>
+			  
+							
+                  
+              			    <div id="sendmessage"> </div> 
+							<div id="errormessage"></div>
+								<script> 
+                                 document.getElementById('contactForm').addEventListener('submit', async function(event) {
+    event.preventDefault(); // Prevent the form from submitting normally
+
+    // Validate the form fields
+    const validationResult = validateForm(this);
+
+    if (!validationResult.isValid) {
+        // Show an error message
+        const errorMessage = document.createElement('div');
+        errorMessage.className = 'alert alert-danger';
+        errorMessage.textContent = validationResult.errorMessage;
+        this.parentNode.insertBefore(errorMessage, this);
+
+        // Hide the error message after a few seconds
+        setTimeout(() => {
+            errorMessage.remove();
+        }, 2000);
+
+        return; // Stop the function from continuing
+    }
+
+    // Prepare the form data
+    const formData = new FormData(this);
+
+    // Send the email using the Fetch API
+    try {
+        const response = await fetch('send-email.php', {
+            method: 'POST',
+            body: formData
+        });
+
+        if (!response.ok) {
+            throw new Error('Failed to send email');
+        }
+
+        // Show the Thank You message
+        const thankYouMessage = document.createElement('div');
+        thankYouMessage.className = 'alert alert-success';
+        thankYouMessage.textContent = 'Thank you for your message! We will get back to you soon.';
+        this.parentNode.insertBefore(thankYouMessage, this);
+
+        // Hide the form
+        this.style.display = 'none';
+    } catch (error) {
+        // Show an error message
+        const errorMessage = document.createElement('div');
+        errorMessage.className = 'alert alert-danger';
+        errorMessage.textContent = 'Failed to send email. Please try again later.';
+        this.parentNode.insertBefore(errorMessage, this);
+    }
+});
+
+function validateForm(form) {
+    let isValid = true;
+    let errorMessage = '';
+
+    // Validate the name field
+    const name = form.elements['name'].value.trim();
+    if (name === '') {
+        isValid = false;
+        errorMessage = 'Please enter your name.';
+    }
+
+    // Validate the email field
+    const email = form.elements['email'].value.trim();
+    if (email === '') {
+        isValid = false;
+        errorMessage = 'Please enter your email address.';
+    } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+        isValid = false;
+        errorMessage = 'Please enter a valid email address.';
+    }
+
+     // Validate the phone field
+    const phone = form.elements['phone'].value.trim();
+    if (phone === '') {
+        isValid = false;
+       
+        errorMessage = 'Please enter a valid phone number.';
+    }
+	else if (!phone.startsWith('+')) {
+        isValid = false;
+        errorMessage = 'Phone number must start with "+" sign.';
+    } else if (!/^\+[0-9]{10,13}$/.test(phone)) {
+        isValid = false;
+        errorMessage = 'Invalid phone number format.';
+    }
+
+    return {
+        isValid: isValid,
+        errorMessage: errorMessage
+    };
+}
+                  </script>
+			  
+			  
+				</div>
+			</div>
+
+			</div>
+
+		</div>
+    </section>
+<!--============================================================Contact END============================================================-->
+  </main>
+
+  <!--==========================
+    Footer
+  ============================-->
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-4 col-md-6 footer-info">
+            <h3>Creative-Billings</h3>
+            <p>An accomplished professional with a wealth of industry expertise and a proven track record across various organizations. Currently, thriving as an independent contractor, leading a highly skilled team of billing experts.</p>
+          </div>
+
+          <div class="col-lg-2 col-md-6 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About us</a></li>
+              <li><a href="#">Services</a></li>
+              <li><a href="#">Terms of service</a></li>
+              <li><a href="#">Privacy policy</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-contact">
+            <h4>Contact Us</h4>
+            <p>
+              </p> <br>
+              <strong>Phone:</strong> +966 56 930 4993<br>
+              <strong>Email:</strong> info@creative-billings.com<br>
+            </p>
+
+            <div class="social-links">
+              <!-- <a href="#" class="twitter"><i class="fa fa-twitter"></i></a> -->
+              <a href="https://www.facebook.com/profile.php?id=100088473475648&mibextid=2JQ9oc" target="blank" class="facebook"><i class="fa fa-facebook"></i></a>
+              <!-- <a href="#" class="instagram"><i class="fa fa-instagram"></i></a> -->
+              <a href="mailto:info@creative-billings.com" target="blank" class="google-plus"><i class="fa fa-google-plus"></i></a>
+              <a href="https://www.linkedin.com/in/edward-grey-629329261?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="blank" class="linkedin"><i class="fa fa-linkedin"></i></a>
+            </div>
+
+          </div>
+
+          <!-- <div class="col-lg-3 col-md-6 footer-newsletter"> -->
+            <!-- <h4>Our Newsletter</h4> -->
+            <!-- <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna veniam enim veniam illum dolore legam minim quorum culpa amet magna export quem marada parida nodela caramase seza.</p> -->
+            <!-- <form action="" method="post"> -->
+              <!-- <input type="email" name="email"><input type="submit"  value="Subscribe"> -->
+            <!-- </form> -->
+          <!-- </div> -->
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong>Creative-Billings</strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+        <!--
+         
+          Licensing information: https://bootstrapmade.com/license/
+          
+        -->
+        <!-- Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a> -->
+      </div>
+    </div>
+  </footer><!-- #footer -->
+
+  <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+  <!-- Uncomment below i you want to use a preloader -->
+  <!-- <div id="preloader"></div> -->
+
+  <!-- JavaScript Libraries -->
+  <script src="lib/jquery/jquery.min.js"></script>
+  <script src="lib/jquery/jquery-migrate.min.js"></script>
+  <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="lib/easing/easing.min.js"></script>
+  <script src="lib/mobile-nav/mobile-nav.js"></script>
+  <script src="lib/wow/wow.min.js"></script>
+  <script src="lib/waypoints/waypoints.min.js"></script>
+  <script src="lib/counterup/counterup.min.js"></script>
+  <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+  <script src="lib/isotope/isotope.pkgd.min.js"></script>
+  <script src="lib/lightbox/js/lightbox.min.js"></script>
+  <!-- Contact Form JavaScript File -->
+  <script src="contactform/contactform.js"></script>
+
+  <!-- Template Main Javascript File -->
+  <script src="js/main.js"></script>
+  
+  
+  <script src="Form/js/jquery.min.js"></script>
+  <script src="Form/js/popper.js"></script>
+  <script src="Form/js/bootstrap.min.js"></script>
+  <script src="Form/js/jquery.validate.min.js"></script>
+  <script src="Form/js/main.js"></script>
+  
+
+</body>
+</html>
